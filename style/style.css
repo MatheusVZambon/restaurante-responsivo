@@ -1,0 +1,225 @@
+/*
+
+SUMÁRIO 
+
+    0. Configurações Gerais
+    1. Header
+
+*/
+
+/* 0. Configurações Gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Lora:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ptn-white: #FEF9FF;
+    --ptn-black: #000000;
+    --pcp-orange: #FF934F;
+    --pcp-grey: #575A5E;
+
+    --srf-lora: 'Lora',times;
+    --csv-comfortaa: 'Comfortaa',arial;
+}
+
+/* ----------------------- */
+
+/* 1. Header */
+
+header{
+    margin: 18px 0;
+
+    background-color: var(--pcp-orange);
+}
+
+.header-nav{
+    display: grid;
+    grid-template-columns: 25% 30% 25%;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px 0px;
+}
+
+.header-nav-logo{
+    font: normal bold 50px var(--csv-comfortaa);
+    color: var(--ptn-white);
+
+    text-align: center;
+}
+
+.header-nav-menu{
+    text-align: center;
+}
+
+.header-nav-menu-link{
+    text-decoration: none;   
+
+    margin-inline: 40px;
+}
+
+.header-nav-menu-item{
+    display: inline;
+
+    font: normal normal 22px var(--csv-comfortaa);
+    color: var(--ptn-white);
+
+    transition: 0.25s ease-in-out;
+}
+
+.header-nav-menu-item:hover{
+    color: rgba(255, 255, 255, 0.7);
+
+    transition: 0.25s ease-in-out;
+}
+
+/* 1.1 Dropdown */
+
+.div-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.div-dropdown-content{
+    display: none;
+    position: absolute;
+
+    margin-top: .5px;
+
+    width: 100%;
+
+    background-color: var(--ptn-white);
+
+    z-index: 3;
+}
+
+.div-dropdown-content-link{
+    display: block;
+
+    padding: 10px;
+
+    font: normal normal 18px var(--csv-comfortaa);
+    color: var(--pcp-grey);
+
+    border-top: 1px solid var(--pcp-orange);
+
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+.div-dropdown:hover .div-dropdown-content{
+    display: block;
+}
+
+.div-dropdown-content-link:hover{
+    background-color: var(--pcp-grey);
+    color: var(--ptn-white);
+
+    transition: all 0.5s ease-in-out;
+}
+
+/* ------------ */
+
+/* --------- */
+
+/* 2. Main */
+
+.main-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    width: calc(100% - 20px);
+    height: calc(100vh - 160px);
+}
+
+.main-banner-title{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    height: 15%;
+    width: 100%;
+
+    background-color: var(--pcp-grey);
+}
+
+.main-banner-title-text{
+    font: normal bold 35px var(--srf-lora);
+    color: var(--ptn-white);
+}
+
+.main-banner-title-button{
+    padding: 5px 80px;
+
+    font: normal bold 26px var(--srf-lora);
+    color: var(--ptn-white);
+
+    background: linear-gradient(to right, var(--ptn-white) 50%, var(--pcp-orange) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+
+    border: 0.5px solid var(--ptn-white);
+    border-radius: 15px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: all 0.5s ease-out;
+}
+
+.main-banner-title-button:hover{
+    background-position: left bottom;
+    color: var(--pcp-orange);
+}
+
+.main-banner-food{
+    display: flex;
+    
+    margin-top: 10px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.main-banner-food-sec{
+    height: 100%;
+    width: calc((100% / 3) + 20px);
+}
+
+.bfs-left{
+    clip-path: polygon(0 0, 100% 0, calc(100% - 30px) 100%, 0% 100%);
+    background-image: url(../media/lasagna-jumbotron.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bfs-mid{
+    margin-left: -20px;
+    clip-path: polygon(30px 0, 100% 0, calc(100% - 30px) 100%, 0% 100%);
+    background-image: url(../media/pasta1-jumbotron.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bfs-right{
+    margin-left: -20px;
+    clip-path: polygon(30px 0, 100% 0, 100% 100%, 0% 100%);
+    background-image: url(../media/pasta2-jumbotron.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ------- */
