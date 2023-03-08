@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/14f2d4c777.js" crossorigin="anonymous"></script> <!-- Script FA -->
+    <script defer src="./js/animation.js"></script>
     <link rel="stylesheet" href="/style/style.css">
     <title>Spettacolo | Home</title>
 </head>
 <body>
     <header>
-        <nav class="header-nav">
+        <nav class="header-nav" id="header-nav">
             <ul class="header-nav-menu">
                 <a href="#" class="header-nav-menu-link">
                     <li class="header-nav-menu-item">Início</li>
@@ -38,7 +41,7 @@
         </nav>
     </header>
     <main>
-        <div class="main-banner">
+        <section class="main-banner" id="main-banner">
             <div class="main-banner-title">
                 <h2 class="main-banner-title-text">O melhor da culinária italiana está aqui</h2>
                 <a href="#" class="main-banner-title-button-link"><button class="main-banner-title-button">Cardápio</button></a>
@@ -48,8 +51,205 @@
                 <div class="main-banner-food-sec bfs-mid"></div>
                 <div class="main-banner-food-sec bfs-right"></div>
             </div>
-        </div>
+        </section>
+        <section class="main-history hidden" id="main-history">
+            <div class="main-history-side">
+                <a href="#header-nav"><i class="fa-solid fa-chevron-up"></i></a>
+                <a href="#main-offer"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+            <div class="main-history-content">
+                <h3 class="main-history-content-title">História</h3>
+                <p class="main-history-content-text">Criada em 1988, a rede de culinária italiana Spettacolo busca lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero deserunt asperiores sapiente voluptatibus cum, iste nisi praesentium consectetur recusandae, autem obcaecati eos! Consequuntur doloribus facilis libero nobis officiis reiciendis id. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero deserunt asperiores sapiente voluptatibus cum, iste nisi praesentium consectetur recusandae, autem obcaecati eos! Consequuntur doloribus facilis libero nobis officiis reiciendis id. Libero deserunt asperiores sapiente voluptatibus cum, iste nisi praesentium consectetur recusandae, autem obcaecati eos!</p>
+            </div>
+        </section>
+        <section class="main-offer hidden" id="main-offer">
+            <div class="main-offer-side">
+                <a href="#main-history"><i class="fa-solid fa-chevron-up"></i></a>
+                <a href="#main-team"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+            <div class="main-offer-content">
+                <h3 class="main-offer-content-title">Promoções</h3>
+                <div class="main-offer-content-card-container">
+                    <div class="main-offer-content-card">
+                        <div class="main-offer-content-card-image">
+                            <img src="./media/pasta1-jumbotron.jpg" alt="" class="main-offer-content-card-image-pic">
+                            <div class="main-offer-content-card-info">
+                                <h4 class="main-offer-content-card-info-title">Lorem Ipsum</h4>
+                                <a href="#">
+                                    <button class="main-offer-content-card-info-link">Ver Cardápio</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-offer-content-card-price">
+                            <p class="main-offer-content-card-price-line">R$ 10,00</p>
+                            <p class="main-offer-content-card-price-promo">R$ 5,00</p>
+                        </div>
+                    </div>
+                    <div class="main-offer-content-card">
+                        <div class="main-offer-content-card-image">
+                            <img src="./media/pasta1-jumbotron.jpg" alt="" class="main-offer-content-card-image-pic">
+                            <div class="main-offer-content-card-info">
+                                <h4 class="main-offer-content-card-info-title">Lorem Ipsum</h4>
+                                <a href="#">
+                                    <button class="main-offer-content-card-info-link">Ver Cardápio</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-offer-content-card-price">
+                            <p class="main-offer-content-card-price-line">R$ 10,00</p>
+                            <p class="main-offer-content-card-price-promo">R$ 5,00</p>
+                        </div>
+                    </div>
+                    <div class="main-offer-content-card">
+                        <div class="main-offer-content-card-image">
+                            <img src="./media/pasta1-jumbotron.jpg" alt="" class="main-offer-content-card-image-pic">
+                            <div class="main-offer-content-card-info">
+                                <h4 class="main-offer-content-card-info-title">Lorem Ipsum</h4>
+                                <a href="#">
+                                    <button class="main-offer-content-card-info-link">Ver Cardápio</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-offer-content-card-price">
+                            <p class="main-offer-content-card-price-line">R$ 10,00</p>
+                            <p class="main-offer-content-card-price-promo">R$ 5,00</p>
+                        </div>
+                    </div>
+                    <div class="main-offer-content-card">
+                        <div class="main-offer-content-card-image">
+                            <img src="./media/pasta1-jumbotron.jpg" alt="" class="main-offer-content-card-image-pic">
+                            <div class="main-offer-content-card-info">
+                                <h4 class="main-offer-content-card-info-title">Lorem Ipsum</h4>
+                                <a href="#">
+                                    <button class="main-offer-content-card-info-link">Ver Cardápio</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-offer-content-card-price">
+                            <p class="main-offer-content-card-price-line">R$ 10,00</p>
+                            <p class="main-offer-content-card-price-promo">R$ 5,00</p>
+                        </div>
+                    </div>
+                    <div class="main-offer-content-card">
+                        <div class="main-offer-content-card-image">
+                            <img src="./media/pasta1-jumbotron.jpg" alt="" class="main-offer-content-card-image-pic">
+                            <div class="main-offer-content-card-info">
+                                <h4 class="main-offer-content-card-info-title">Lorem Ipsum</h4>
+                                <a href="#">
+                                    <button class="main-offer-content-card-info-link">Ver Cardápio</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-offer-content-card-price">
+                            <p class="main-offer-content-card-price-line">R$ 10,00</p>
+                            <p class="main-offer-content-card-price-promo">R$ 5,00</p>
+                        </div>
+                    </div>
+                    <div class="main-offer-content-card">
+                        <div class="main-offer-content-card-image">
+                            <img src="./media/pasta1-jumbotron.jpg" alt="" class="main-offer-content-card-image-pic">
+                            <div class="main-offer-content-card-info">
+                                <h4 class="main-offer-content-card-info-title">Lorem Ipsum</h4>
+                                <a href="#">
+                                    <button class="main-offer-content-card-info-link">Ver Cardápio</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-offer-content-card-price">
+                            <p class="main-offer-content-card-price-line">R$ 10,00</p>
+                            <p class="main-offer-content-card-price-promo">R$ 5,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-team hidden" id="main-team">
+            <div class="main-team-side">
+                <a href="#main-offer"><i class="fa-solid fa-chevron-up"></i></a>
+                <a href="#footer"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+            <div class="main-team-content">
+                <h4 class="main-team-content-title">Nossa Equipe</h4>
+                <div class="main-team-content-card-container">
+                    <div class="main-team-content-card">
+                        <div class="main-team-content-card-image">
+                        </div>
+                        <div class="main-team-content-card-text">
+                            <h4 class="main-team-content-card-text-name">John Smith</h4>
+                            <p class="main-team-content-card-text-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, labore perspiciatis temporibus quam sequi ab quae reiciendis commodi!</p>
+                            <div class="main-team-content-card-text-sm">
+                                <i class="fa-brands fa-square-facebook"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-team-content-card">
+                        <div class="main-team-content-card-image">
+                        </div>
+                        <div class="main-team-content-card-text">
+                            <h4 class="main-team-content-card-text-name">John Smith</h4>
+                            <p class="main-team-content-card-text-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, labore perspiciatis temporibus quam sequi ab quae reiciendis commodi!</p>
+                            <div class="main-team-content-card-text-sm">
+                                <i class="fa-brands fa-square-facebook"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-team-content-card">
+                        <div class="main-team-content-card-image">
+                        </div>
+                        <div class="main-team-content-card-text">
+                            <h4 class="main-team-content-card-text-name">John Smith</h4>
+                            <p class="main-team-content-card-text-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, labore perspiciatis temporibus quam sequi ab quae reiciendis commodi!</p>
+                            <div class="main-team-content-card-text-sm">
+                                <i class="fa-brands fa-square-facebook"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+        <div class="footer-side">
+            <a href="#header-nav"><i class="fa-solid fa-chevron-up"></i></a>
+            <p class="footer-side-text">Topo</p>
+        </div>
+        <div class="footer-sections">
+            <div class="footer-top">
+                <div class="footer-top-menu">
+                    <nav class="footer-top-menu-nav">
+                        <ul class="footer-top-menu-nav-list">
+                            <li class="footer-top-menu-item">Franquias</li>
+                            <li class="footer-top-menu-item">Sustentabilidade</li>
+                            <li class="footer-top-menu-item">Trabalhe Conosco</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-top-sm">
+                    <i class="fa-brands fa-square-facebook fa-brands-ft"></i>
+                    <i class="fa-brands fa-square-twitter fa-brands-ft"></i>
+                    <i class="fa-brands fa-square-instagram fa-brands-ft"></i>
+                </div>
+                <div class="footer-top-nl">
+                    <h4 class="footer-top-nl-text">Assine nossa Newsletter!</h4>
+                    <input type="email" class="footer-top-nl-input" placeholder="seu@email.com">
+                    <button class="footer-top-nl-btn">ENVIAR</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-logo">
+                    <h1 class="footer-bottom-logo-text">Spettacolo</h1>
+                </div>
+                <div class="footer-bottom-cr">
+                    <p class="footer-bottom-cr-text">Rede Spettacolo - 2023 &copy; - Todos os Direitos Reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
