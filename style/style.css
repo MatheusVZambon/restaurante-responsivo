@@ -775,7 +775,7 @@ footer{
 .main-menu{
     display: grid;
     grid-template-columns: 15% 80%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
     margin: 100px auto 100px auto;
@@ -785,6 +785,11 @@ footer{
 
 
 /* 4.1 Menu Lateral */
+
+.main-menu-aside{
+    position: sticky;
+    top: 15px;
+}
 
 .main-menu-aside-nav-list{
     list-style: none;
@@ -821,8 +826,11 @@ footer{
     background-color: var(--lgt-grey);
 }
 
-
 /* 4.2 Menu Central */
+
+.main-menu-food-div{
+    margin-bottom: 50px;
+}
 
 .main-menu-food-div-title{
     padding-bottom: 25px;
@@ -861,6 +869,9 @@ footer{
 .main-menu-food-div-item-image{
     margin-bottom: 15px;
 
+    width: 300px;
+    height: 200px;
+
     border: 2.5px solid var(--pcp-orange);
 
     border-top-right-radius: 10px;
@@ -875,6 +886,8 @@ footer{
 }
 
 .main-menu-food-div-item-desc{
+    margin-bottom: 25px;
+
     font: normal normal 14px var(--srf-lora);
     color: var(--pcp-grey);
 

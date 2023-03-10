@@ -7,6 +7,7 @@
     <title>Spettacolo | Cardápio</title>
 
     <script src="https://kit.fontawesome.com/14f2d4c777.js" crossorigin="anonymous"></script> <!-- Script FA -->
+    <script src="./js/aside-menu.js"></script> <!-- Script Aside -->
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
@@ -44,23 +45,23 @@
             <aside class="main-menu-aside">
                 <nav class="main-menu-aside-nav">
                     <ul class="main-menu-aside-nav-list">
-                        <a href="" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options" id="first-option">Entradas</li>
+                        <a href="#food-div-entradas" class="main-menu-aside-nav-list-link">
+                            <li class="main-menu-aside-nav-list-options" id="first-option" onclick="changeBG(this)">Entradas</li>
                         </a>
-                        <a href="" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options">Pratos Principais</li>
+                        <a href="#food-div-principais" class="main-menu-aside-nav-list-link">
+                            <li class="main-menu-aside-nav-list-options" onclick="changeBG(this)">Pratos Principais</li>
                         </a>
-                        <a href="" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options">Sobremesas</li>
+                        <a href="#food-div-sobremesas" class="main-menu-aside-nav-list-link">
+                            <li class="main-menu-aside-nav-list-options" onclick="changeBG(this)">Sobremesas</li>
                         </a>
-                        <a href="" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options" id="last-option">Bebidas</li>
+                        <a href="#food-div-bebidas" class="main-menu-aside-nav-list-link">
+                            <li class="main-menu-aside-nav-list-options" id="last-option" onclick="changeBG(this)">Bebidas</li>
                         </a>
                     </ul>
                 </nav>
             </aside>
             <section class="main-menu-food">
-                <div class="main-menu-food-div">
+                <div class="main-menu-food-div" id="food-div-entradas">
                     <h2 class="main-menu-food-div-title">Entradas</h2>
                     <div class="main-menu-food-div-container">
                         <div class="main-menu-food-div-item">
@@ -79,6 +80,93 @@
                             <h3 class="main-menu-food-div-item-title">Salada de Tomate</h3>
                             <img src="./media/menu-entrada.jpg" alt="" class="main-menu-food-div-item-image">
                             <p class="main-menu-food-div-item-price">R$ 19,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-menu-food-div" id="food-div-principais">
+                    <h2 class="main-menu-food-div-title">Pratos Principais</h2>
+                    <div class="main-menu-food-div-container">
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Espaguete Bolonhesa</h3>
+                            <img src="./media/menu-principal1.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 29,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Lasanha</h3>
+                            <img src="./media/menu-principal2.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 34,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Pizza</h3>
+                            <img src="./media/menu-principal3.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 39,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Espaguete Bolonhesa</h3>
+                            <img src="./media/menu-principal1.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 29,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Lasanha</h3>
+                            <img src="./media/menu-principal2.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 34,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Pizza</h3>
+                            <img src="./media/menu-principal3.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 39,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-menu-food-div" id="food-div-sobremesas">
+                    <h2 class="main-menu-food-div-title">Sobremesas</h2>
+                    <div class="main-menu-food-div-container">
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Panacota</h3>
+                            <img src="./media/menu-sobremesa1.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 14,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Tiramisu</h3>
+                            <img src="./media/menu-sobremesa2.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 9,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Panacota</h3>
+                            <img src="./media/menu-sobremesa1.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 14,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-menu-food-div" id="food-div-bebidas">
+                    <h2 class="main-menu-food-div-title">Bebidas</h2>
+                    <div class="main-menu-food-div-container">
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Água com limão</h3>
+                            <img src="./media/menu-bebida.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 6,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Água com limão</h3>
+                            <img src="./media/menu-bebida.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 6,99</p>
+                            <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
+                        </div>
+                        <div class="main-menu-food-div-item">
+                            <h3 class="main-menu-food-div-item-title">Água com limão</h3>
+                            <img src="./media/menu-bebida.jpg" alt="" class="main-menu-food-div-item-image">
+                            <p class="main-menu-food-div-item-price">R$ 6,99</p>
                             <p class="main-menu-food-div-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur blanditiis sed!</p>
                         </div>
                     </div>
