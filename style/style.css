@@ -4,12 +4,23 @@ SUMÁRIO
 
     0. Configurações Gerais
     1. Header
+        1.1 Dropdown
+    2. Footer
+        2.1 Footer Top
+        2.1 Footer Bottom
+    3. Homepage
+        3.1 Main - Homepage
+            3.1.1 Banner - Homepage
+            3.1.2 History - Homepage
+            3.1.3 Offer - Homepage
+            3.1.4 Team - Homepage
+    4. Cardápio
 
 */
 
 /* 0. Configurações Gerais */
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Lora:wght@400;700&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Courgette&family=Lora:wght@400;700&family=Nunito&display=swap');
 
 *{
     margin: 0;
@@ -33,6 +44,7 @@ SUMÁRIO
 
     --srf-lora: 'Lora',times;
     --csv-comfortaa: 'Comfortaa',arial;
+    --csv-courgette: 'Courgette', arial;
     --ssf-nunito : 'Nunito',arial;
 }
 
@@ -47,7 +59,6 @@ SUMÁRIO
     transform: translateY(0);
 }
 
-/* ----------------------- */
 
 /* 1. Header */
 
@@ -143,11 +154,10 @@ header{
     transition: all 0.5s ease-in-out;
 }
 
-/* ------------ */
 
-/* --------- */
+/* 3. Homepage */
 
-/* 2. Main */
+/* 3.1 Main - Homepage */
 
 main{
     margin: auto;
@@ -155,7 +165,7 @@ main{
     width: calc(100% - 20px);
 }
 
-/* 2.1 Banner */
+/* 1.2.1 Banner - Homepage */
 
 .main-banner{
     display: flex;
@@ -248,9 +258,8 @@ main{
     background-position: center center;
 }
 
-/* ---------- */
 
-/* 2.2 History */
+/* 3.1.2 History - Homepage */
 
 .main-history{
     display: grid;
@@ -316,9 +325,8 @@ main{
     line-height: 40px;
 }
 
-/* ------------ */
 
-/* 2.3 Offer */
+/* 3.1.3 Offer - Homepage */
 
 .main-offer{
     display: grid;
@@ -489,9 +497,8 @@ main{
     color: var(--pcp-grey);
 }
 
-/* --------- */
 
-/* 2.4 Equipe */
+/* 3.1.4 Team - Homepage */
 
 .main-team{
     display: grid;
@@ -623,11 +630,8 @@ main{
     cursor: pointer;
 }
 
-/* ---------- */
 
-/* ------- */
-
-/* 3. Footer */
+/* 2. Footer */
 
 footer{
     display: grid;
@@ -659,7 +663,7 @@ footer{
     height: 100%;
 }
 
-/* 3.1 Footer Top */
+/* 2.1 Footer Top */
 
 .footer-top{
     display: flex;
@@ -741,9 +745,8 @@ footer{
     cursor: pointer;
 }
 
-/* -------------- */
 
-/* 3.2 Footer Bottom */
+/* 2.2 Footer Bottom */
 
 .footer-bottom{
     display: flex;
@@ -767,6 +770,113 @@ footer{
     color: var(--ptn-white);
 }
 
-/* ----------------- */
+/* 4. Cardápio */
 
-/* --------- */
+.main-menu{
+    display: grid;
+    grid-template-columns: 15% 80%;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 100px auto 100px auto;
+
+    width: 90%;
+}
+
+
+/* 4.1 Menu Lateral */
+
+.main-menu-aside-nav-list{
+    list-style: none;
+}
+
+.main-menu-aside-nav-list-link{
+    text-decoration: none;
+}
+
+.main-menu-aside-nav-list-options{
+    padding: 30px 7.5px;
+
+    font: normal bold 16px var(--csv-comfortaa);
+    color: var(--ptn-white);
+
+    background-color: var(--pcp-grey);
+
+    border-bottom: 1px solid var(--ptn-white);
+
+    transition: all 0.25s ease-in-out;
+}
+
+#first-option{
+    border-top: 1px solid var(--ptn-white);
+    border-top-right-radius: 15px;
+}
+
+#last-option{
+    border-bottom-left-radius: 15px;
+}
+
+.main-menu-aside-nav-list-options:hover{
+    color: var(--ptn-white);
+    background-color: var(--lgt-grey);
+}
+
+
+/* 4.2 Menu Central */
+
+.main-menu-food-div-title{
+    padding-bottom: 25px;
+
+    font: normal normal 40px var(--csv-courgette);
+    color: var(--pcp-orange);
+
+    text-align: center;
+
+    border-bottom: 1.5px solid var(--ptn-black);
+}
+
+.main-menu-food-div-container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+.main-menu-food-div-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu-food-div-item-title{
+    margin-bottom: 15px;
+
+    font: normal bold 20px var(--ssf-nunito);
+    color: var(--pcp-grey);
+
+    text-transform: uppercase;
+}
+
+.main-menu-food-div-item-image{
+    margin-bottom: 15px;
+
+    border: 2.5px solid var(--pcp-orange);
+
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.main-menu-food-div-item-price{
+    margin-bottom: 15px;
+
+    font: normal bold 16px var(--srf-lora);
+    color: var(--pcp-orange);
+}
+
+.main-menu-food-div-item-desc{
+    font: normal normal 14px var(--srf-lora);
+    color: var(--pcp-grey);
+
+    text-align: justify;
+}
