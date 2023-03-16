@@ -4,7 +4,6 @@ SUMÁRIO
 
     0. Configurações Gerais
     1. Header
-        1.1 Dropdown
     2. Footer
         2.1 Footer Top
         2.1 Footer Bottom
@@ -37,6 +36,8 @@ SUMÁRIO
     --pcp-grey: #575A5E;
     --opc-grey: rgba(87, 90, 94, 0.80);
     --lgt-grey: #9AA0A8;
+    --btn-grn: #29B33C;
+    --btn-red: #B10000;
 
     --brd-fb: #37548E;
     --brd-tt: #33B0F2;
@@ -109,51 +110,6 @@ header{
 
     transition: 0.25s ease-in-out;
 }
-
-/* 1.1 Dropdown */
-
-.div-dropdown{
-    position: relative;
-    display: inline-block;
-}
-
-.div-dropdown-content{
-    display: none;
-    position: absolute;
-
-    width: 100%;
-
-    background-color: var(--ptn-white);
-
-    z-index: 3;
-}
-
-.div-dropdown-content-link{
-    display: block;
-
-    padding: 10px;
-
-    font: normal normal 18px var(--csv-comfortaa);
-    color: var(--pcp-grey);
-
-    border-top: 1px solid var(--pcp-orange);
-
-    text-decoration: none;
-
-    transition: all 0.5s;
-}
-
-.div-dropdown:hover .div-dropdown-content{
-    display: block;
-}
-
-.div-dropdown-content-link:hover{
-    background-color: var(--pcp-grey);
-    color: var(--ptn-white);
-
-    transition: all 0.5s ease-in-out;
-}
-
 
 /* 3. Homepage */
 
@@ -269,25 +225,13 @@ main{
 
     margin-bottom: 100px;
 
-    background-image: linear-gradient(to right, var(--opc-grey), var(--opc-grey)), url(/media/history-bg.jpg);
+    background-image: url(/media/history-bg.jpg);
     background-size: auto;
     background-position: center center;
 }
 
 .main-history-side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-
-    padding: 30px 10px;
-
     border-right: 3px solid var(--ptn-white);
-}
-
-.fa-chevron-up, .fa-chevron-down{
-    font-size: 40px;
-    color: var(--ptn-white);
 }
 
 .main-history-content{
@@ -297,7 +241,10 @@ main{
     justify-content: center;
 
     padding: 30px 75px;
+
+    background-image: linear-gradient(to right, var(--opc-grey), var(--opc-grey));
 }
+
 
 .main-history-content-title{
     position: absolute;
@@ -336,7 +283,7 @@ main{
 
     height: 95vh;
 
-    background-image: linear-gradient(to right, var(--opc-grey), var(--opc-grey)), url(/media/table-background.jpg);
+    background-image: url(/media/table-background.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -354,6 +301,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    background-image: linear-gradient(to right, var(--opc-grey), var(--opc-grey));
 }
 
 .main-offer-content-title{
@@ -504,9 +453,9 @@ main{
     display: grid;
     grid-template-columns: 10% 90%;
 
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 
-    background-image: linear-gradient(to right, var(--opc-grey), var(--opc-grey)), url(/media/ourteam-bg.jpg);
+    background-image: url(/media/ourteam-bg.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -526,8 +475,9 @@ main{
     justify-content: center;
     align-items: center;
 
-    padding: 100px 75px;
-    margin-top: 40px;
+    padding: 120px 75px 30px 75px;
+
+    background-image: linear-gradient(to right, var(--opc-grey), var(--opc-grey));
 }
 
 .main-team-content-title{
@@ -639,6 +589,10 @@ footer{
     align-items: center;
     justify-content: center;
     grid-auto-flow: column;
+}
+
+#footer-reserva{
+    grid-template-columns: 0% 100%;
 }
 
 .footer-side{
@@ -760,6 +714,11 @@ footer{
     border-top: 2px solid var(--ptn-white);
 }
 
+.fa-chevron-up{
+    font-size: 40px;
+    color: var(--ptn-white);
+}
+
 .footer-bottom-logo-text{
     font: normal bold 50px var(--csv-comfortaa);
     color: var(--ptn-white);
@@ -812,9 +771,17 @@ footer{
     transition: all 0.25s ease-in-out;
 }
 
+.fa-food{
+    padding-right: 7.5px;
+}
+
 #first-option{
     border-top: 1px solid var(--ptn-white);
     border-top-right-radius: 15px;
+}
+
+#pp-option{
+    font-size: 15px;
 }
 
 #last-option{
@@ -892,4 +859,273 @@ footer{
     color: var(--pcp-grey);
 
     text-align: justify;
+}
+
+
+/* 5. Reserva */
+
+#main-bkg{
+    width: 100%;
+}
+
+.main-booking{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;  
+
+    margin: 50px 0;
+
+    background-image: linear-gradient(to right, var(--opc-grey), var(--opc-grey)), url(/media/booking-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-booking-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+
+    padding: 30px 20px;
+}
+
+.fa-utensils{
+    font-size: 60px;
+    color: var(--ptn-white);
+}
+
+.main-booking-info-title{
+    font: normal bold 48px var(--csv-courgette);
+    color: var(--ptn-white);
+}
+
+.main-booking-info-text{
+    font: normal normal 16px var(--ssf-nunito);
+    color: var(--ptn-white);
+
+    text-align: justify;
+}
+
+.main-booking-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    padding: 30px 100px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.bk-label{
+    display: block;
+
+    margin: 10px 0;
+
+    font: normal bold 20px var(--csv-comfortaa);
+    color: var(--ptn-white);
+}
+
+.bk-input{
+    padding: 1.5px 0 1.5px 5px;
+    margin-bottom: 25px;
+
+    width: 200px;
+    height: 25px;
+
+    font: normal normal 14px var(--ssf-nunito);
+    color: var(--ptn-black);
+
+    border: none;
+    border-radius: 5px;
+}
+
+.bk-btn{
+    padding: 3px 5px;
+
+    width: 100px;
+    height: 40px;
+
+    font: normal bold 16px var(--ssf-nunito);
+    color: var(--ptn-white);
+
+    border: 1px solid var(--ptn-white);
+    border-radius: 7.5px;
+}
+
+#bk-btn-reset{
+    background: linear-gradient(to right, var(--ptn-white) 50%, var(--btn-red) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+
+    transition: all 0.5s ease-in-out;
+}
+
+#bk-btn-reset:hover{
+    background-position: left bottom;
+    color: var(--btn-red);
+    border-color: var(--btn-red);
+
+    cursor: pointer;
+}
+
+#bk-btn-submit{
+    background: linear-gradient(to right, var(--ptn-white) 50%, var(--btn-grn) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+
+    transition: all 0.5s ease-in-out;
+}
+
+#bk-btn-submit:hover{
+    background-position: left bottom;
+    color: var(--btn-grn);
+    border-color: var(--btn-grn);
+
+    cursor: pointer;
+}
+
+.bk-display-none{
+    display: none;
+}
+
+.form-message-show{
+    display: block;
+    font: normal bold 24px var(--csv-comfortaa);
+    color: var(--ptn-white);
+    text-align: center;
+}
+
+
+/* 6. Contato */
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 70px;
+
+    margin: 50px auto;
+}
+
+.contact-section-form-title, .contact-section-si-title{
+    margin-bottom: 20px;
+
+    font: normal bold 36px var(--ssf-nunito);
+    color: var(--drk-orange);
+
+    text-align: center;
+}
+
+.contact-section-form-subtitle, .contact-section-si-subtitle{
+    margin-bottom: 15px;
+
+    font: normal normal 20px var(--ssf-nunito);
+    color: var(--pcp-grey);
+
+    text-align: center;
+}
+
+.ct-input{
+    margin: 15px 0;
+    padding: 10px;
+
+    width: 100%;
+
+    font: normal normal 16px var(--srf-lora);
+    color: var(--pcp-grey);
+
+    border: none;
+    border-bottom: 1px solid var(--ptn-black);
+}
+
+.ct-input:last-of-type{
+    margin-bottom: 0;
+}
+
+#ct-sbj{
+    border: none;
+}
+
+#ct-button{
+    font: normal bold 20px var(--srf-lora);
+
+    border: 1px solid transparent;
+    color: var(--ptn-white);
+    background-color: var(--btn-grn);
+
+    transition: all 0.3s ease-in-out;
+}
+
+#ct-button:hover{
+    color: var(--btn-grn);
+    background-color: var(--ptn-white);
+
+    border-color:  var(--btn-grn);
+
+    cursor: pointer;
+}
+
+.ctt-display-none{
+    display: none;
+}
+
+.contact-message-show{
+    font: normal bold 20px var(--srf-lora);
+    color: var(--drk-orange);
+
+    text-align: center;
+}
+
+.contact-section-si-area{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 10px;
+}
+
+.contact-section-si-area-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 5px 10px;
+
+    width: 160px;
+
+    font: normal normal 20px var(--csv-comfortaa);
+
+    background-color: var(--pcp-orange);
+    color: var(--ptn-white);
+
+    text-align: center;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.fa-brands-btn{
+    color: var(--ptn-white);
+
+    padding-right: 5px;
+}
+
+.contact-section-si-area-btn:hover{
+    color: var(--pcp-orange);
+    background-color: var(--ptn-white);
+    border-color: var(--pcp-orange);
+
+    cursor: pointer;
+}
+
+.contact-section-si-area-btn:hover .fa-brands-btn{
+    color: var(--pcp-orange);
 }

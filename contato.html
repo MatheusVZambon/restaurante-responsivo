@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/14f2d4c777.js" crossorigin="anonymous"></script> <!-- Script FA -->
+    <script src="./js/form.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Spettacolo | Contato</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav" id="header-nav">
+            <ul class="header-nav-menu">
+                <a href="./index.html" class="header-nav-menu-link">
+                    <li class="header-nav-menu-item">Início</li>
+                </a>
+                <a href="./menu.html" class="header-nav-menu-link">
+                    <li class="header-nav-menu-item">Cardápio</li>
+                </a>
+            </ul>
+            <h1 class="header-nav-logo">Spettacolo</h1> <!-- Substituir por imagem depois (?) -->
+            <ul class="header-nav-menu">
+                <a href="./reserva.html" class="header-nav-menu-link">
+                    <li class="header-nav-menu-item">Reserva</li>
+                </a>
+                <a href="./contato.html" class="header-nav-menu-link">
+                    <li class="header-nav-menu-item">Contato</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="contact-section-form">
+                <h2 class="contact-section-form-title">Contato</h2>
+                <p class="contact-section-form-subtitle">Mande-nos uma mensagem, positiva ou negativa sobre alguma experiência na rede Spettacolo.</p>
+                <form action="" method="dialog" id="ct-form"  onsubmit="submitCttForm();">
+                    <input type="text" name="ct-name" id="ct-name" class="ct-input" placeholder="Nome Completo" required><br>
+                    <input type="email" name="ct-email" id="ct-email" class="ct-input" placeholder="E-Mail" required><br>
+                    <select name="ct-sbj" id="ct-sbj" class="ct-input">
+                        <option disabled>Escolha o Assunto</option>
+                        <option value="atend">Atendimento</option>
+                        <option value="entrg">Entrega</option>
+                        <option value="cmd">Comida</option>
+                    </select><br>
+                    <input type="text" name="ct-msg" id="ct-msg" class="ct-input" placeholder="Mensagem" required> 
+                    <p id="contact-message"></p>
+                    <input type="submit" value="Enviar" class="ct-input" id="ct-button">
+                </form>
+            </div>
+            <div class="contact-section-si">
+                <h2 class="contact-section-si-title">Nossas Redes</h2>
+                <p class="contact-section-si-subtitle">Fique atento sobre tudo envolvendo a Spettacolo por aqui!</p>
+                <div class="contact-section-si-area">
+                    <button class="contact-section-si-area-btn">
+                        <i class="fa-brands fa-square-facebook fa-brands-btn"></i><p class="contact-section-btn-text">Facebook</p>
+                    </button>
+                    <button class="contact-section-si-area-btn">
+                        <i class="fa-brands fa-square-instagram fa-brands-btn"></i><p class="contact-section-btn-text">Instagram</p>
+                    </button>
+                    <button class="contact-section-si-area-btn">
+                        <i class="fa-brands fa-square-twitter fa-brands-btn"></i><p class="contact-section-btn-text">Twitter</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-side">
+            <a href="#header-nav"><i class="fa-solid fa-chevron-up"></i></a>
+            <p class="footer-side-text">Topo</p>
+        </div>
+        <div class="footer-sections">
+            <div class="footer-top">
+                <div class="footer-top-menu">
+                    <nav class="footer-top-menu-nav">
+                        <ul class="footer-top-menu-nav-list">
+                            <li class="footer-top-menu-item">Franquias</li>
+                            <li class="footer-top-menu-item">Sustentabilidade</li>
+                            <li class="footer-top-menu-item">Trabalhe Conosco</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-top-sm">
+                    <i class="fa-brands fa-square-facebook fa-brands-ft"></i>
+                    <i class="fa-brands fa-square-twitter fa-brands-ft"></i>
+                    <i class="fa-brands fa-square-instagram fa-brands-ft"></i>
+                </div>
+                <div class="footer-top-nl">
+                    <h4 class="footer-top-nl-text">Fique sabendo das novidades!</h4>
+                    <input type="email" class="footer-top-nl-input" placeholder="seu@email.com">
+                    <button class="footer-top-nl-btn">ENVIAR</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-logo">
+                    <h1 class="footer-bottom-logo-text">Spettacolo</h1>
+                </div>
+                <div class="footer-bottom-cr">
+                    <p class="footer-bottom-cr-text">Rede Spettacolo - 2023 &copy; - Todos os Direitos Reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

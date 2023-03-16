@@ -14,27 +14,19 @@
     <header>
         <nav class="header-nav" id="header-nav">
             <ul class="header-nav-menu">
-                <a href="#" class="header-nav-menu-link">
+                <a href="./index.html" class="header-nav-menu-link">
                     <li class="header-nav-menu-item">Início</li>
                 </a>
-                <div class="div-dropdown">
-                    <a href="./menu.html" class="header-nav-menu-link">
-                        <li class="header-nav-menu-item">Cardápio</li>
-                    </a>
-                    <div class="div-dropdown-content">
-                        <a href="#" class="div-dropdown-content-link">Entradas</a>
-                        <a href="#" class="div-dropdown-content-link">Pratos Principais</a>
-                        <a href="#" class="div-dropdown-content-link">Sobremesas</a>
-                        <a href="#" class="div-dropdown-content-link">Bebidas</a>
-                    </div>
-                </div>
+                <a href="./menu.html" class="header-nav-menu-link">
+                    <li class="header-nav-menu-item">Cardápio</li>
+                </a>
             </ul>
             <h1 class="header-nav-logo">Spettacolo</h1> <!-- Substituir por imagem depois (?) -->
             <ul class="header-nav-menu">
-                <a href="#" class="header-nav-menu-link">
+                <a href="./reserva.html" class="header-nav-menu-link">
                     <li class="header-nav-menu-item">Reserva</li>
                 </a>
-                <a href="#" class="header-nav-menu-link">
+                <a href="./contato.html" class="header-nav-menu-link">
                     <li class="header-nav-menu-item">Contato</li>
                 </a>
             </ul>
@@ -46,16 +38,16 @@
                 <nav class="main-menu-aside-nav">
                     <ul class="main-menu-aside-nav-list">
                         <a href="#food-div-entradas" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options" id="first-option" onclick="changeBG(this)">Entradas</li>
+                            <li class="main-menu-aside-nav-list-options" id="first-option" onclick="changeBG(this)"><i class="fa-solid fa-bowl-food fa-food"></i>Entradas</li>
                         </a>
                         <a href="#food-div-principais" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options" onclick="changeBG(this)">Pratos Principais</li>
+                            <li class="main-menu-aside-nav-list-options" id="pp-option" onclick="changeBG(this)"><i class="fa-solid fa-pizza-slice fa-food"></i>Pratos Principais</li>
                         </a>
                         <a href="#food-div-sobremesas" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options" onclick="changeBG(this)">Sobremesas</li>
+                            <li class="main-menu-aside-nav-list-options" onclick="changeBG(this)"><i class="fa-solid fa-ice-cream fa-food"></i>Sobremesas</li>
                         </a>
                         <a href="#food-div-bebidas" class="main-menu-aside-nav-list-link">
-                            <li class="main-menu-aside-nav-list-options" id="last-option" onclick="changeBG(this)">Bebidas</li>
+                            <li class="main-menu-aside-nav-list-options" id="last-option" onclick="changeBG(this)"><i class="fa-solid fa-glass-water fa-food"></i>Bebidas</li>
                         </a>
                     </ul>
                 </nav>
@@ -196,7 +188,7 @@
                     <i class="fa-brands fa-square-instagram fa-brands-ft"></i>
                 </div>
                 <div class="footer-top-nl">
-                    <h4 class="footer-top-nl-text">Assine nossa Newsletter!</h4>
+                    <h4 class="footer-top-nl-text">Fique sabendo das novidades!</h4>
                     <input type="email" class="footer-top-nl-input" placeholder="seu@email.com">
                     <button class="footer-top-nl-btn">ENVIAR</button>
                 </div>
