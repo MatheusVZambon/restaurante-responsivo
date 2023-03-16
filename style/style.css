@@ -225,7 +225,7 @@ main{
 
     margin-bottom: 100px;
 
-    background-image: url(/media/history-bg.jpg);
+    background-image: url(../media/history-bg.jpg);
     background-size: auto;
     background-position: center center;
 }
@@ -283,7 +283,7 @@ main{
 
     height: 95vh;
 
-    background-image: url(/media/table-background.jpg);
+    background-image: url(../media/table-background.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -455,7 +455,7 @@ main{
 
     margin-bottom: 120px;
 
-    background-image: url(/media/ourteam-bg.jpg);
+    background-image: url(../media/ourteam-bg.jpg);
     background-size: cover;
     background-position: center center;
 }
