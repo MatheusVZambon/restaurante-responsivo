@@ -7,29 +7,32 @@
 
     <script src="https://kit.fontawesome.com/14f2d4c777.js" crossorigin="anonymous"></script> <!-- Script FA -->
     <script defer src="./js/animation.js"></script>
+    <script src="js/media-queries.js"></script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-queries.css">
     <title>Spettacolo | Home</title>
 </head>
 <body>
     <header>
         <nav class="header-nav" id="header-nav">
             <ul class="header-nav-menu">
-                <a href="./index.html" class="header-nav-menu-link">
-                    <li class="header-nav-menu-item">Início</li>
+                <a href="./index.html" class="header-nav-menu-link init-display-mobile change-control">
+                    <li class="header-nav-menu-item" id="first-of-nav">Início</li>
                 </a>
-                <a href="./menu.html" class="header-nav-menu-link">
+                <a href="./menu.html" class="header-nav-menu-link init-display-mobile change-control">
                     <li class="header-nav-menu-item">Cardápio</li>
                 </a>
             </ul>
-            <h1 class="header-nav-logo">Spettacolo</h1> <!-- Substituir por imagem depois (?) -->
+            <h1 class="header-nav-logo" id="header-logo">Spettacolo</h1>
             <ul class="header-nav-menu">
-                <a href="./reserva.html" class="header-nav-menu-link">
+                <a href="./reserva.html" class="header-nav-menu-link init-display-mobile change-control">
                     <li class="header-nav-menu-item">Reserva</li>
                 </a>
-                <a href="./contato.html" class="header-nav-menu-link">
+                <a href="./contato.html" class="header-nav-menu-link init-display-mobile change-control">
                     <li class="header-nav-menu-item">Contato</li>
                 </a>
             </ul>
+            <h2 class="header-nav-mobile-menu-trigger"><i class="fa-solid fa-bars" onclick="showMobileMenu();"></i></h2>
         </nav>
     </header>
     <main>
