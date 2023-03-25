@@ -55,13 +55,14 @@ body{
 
 .hidden{
     opacity: 0;
-    transform: translateY(100%);
+    /* transform: translateY(100%); */
+    transform: translateY(15%);
     transition: all 1s;
 }
 
 .slide-show{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 
 
@@ -842,13 +843,44 @@ footer{
 .main-menu-food-div-item-image{
     margin-bottom: 15px;
 
-    width: 300px;
+    max-width: 100%;
     height: 200px;
 
     border: 2.5px solid var(--pcp-orange);
 
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
+
+    background-position: center center;
+    background-size: cover;
+}
+
+.image-entrada{
+    background-image: url(../media/menu-entrada.jpg);
+}
+
+.image-pp1{
+    background-image: url(../media/menu-principal1.jpg);
+}
+
+.image-pp2{
+    background-image: url(../media/menu-principal2.jpg)
+}
+
+.image-pp3{
+    background-image: url(../media/menu-principal3.jpg);
+}
+
+.image-sobremesa1{
+    background-image: url(../media/menu-sobremesa1.jpg);
+}
+
+.image-sobremesa2{
+    background-image: url(../media/menu-sobremesa2.jpg);
+}
+
+.image-bebida{
+    background-image: url(../media/menu-bebida.jpg);
 }
 
 .main-menu-food-div-item-price{

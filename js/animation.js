@@ -9,3 +9,4 @@ const InterObs = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el => InterObs.observe(el)));
+

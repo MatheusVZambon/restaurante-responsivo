@@ -2,9 +2,12 @@
 
 SUMÁRIO 
 
-    0. Index
+    0. Configurações Gerais
+    1. Index
 
 */
+
+/* 0. Configurações Gerais */
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Courgette&family=Lora:wght@400;700&family=Nunito&display=swap');
 
@@ -12,7 +15,8 @@ SUMÁRIO
     --csv-comfortaa: 'Comfortaa',arial;
 }
 
-/* 0. Index */
+
+/* 1. Index */
 
 @media only screen and (max-width: 1281px){
     .main-team-content-card-container{
@@ -259,5 +263,71 @@ SUMÁRIO
 @media only screen and (max-width: 343px){
     .main-team-content{
         padding-top: 184px;
+    }
+}
+
+
+/* 2. Menu */
+
+@media only screen and (max-width: 1285px){
+    #text-indent{
+        margin-left: 22.5px;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+    .long-title{
+        font-size: 16px;
+    }
+    .long-option{
+        font-size: 14px;
+    }
+    #pp-option{
+        font-size: 14px;
+    }
+    #text-indent{
+        margin-left: 21.5px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .main-menu{
+        grid-template-columns: none;
+        grid-template-rows: 15% 80%;
+    }
+    
+    .long-option, #pp-option{
+        font-size: 16px;
+    }
+    #text-indent{
+        margin-left: 0;
+    }
+    .main-menu-aside{
+        margin: -40px auto 50px auto;
+        top: 40px;
+    }
+    .main-menu-aside-nav-list-options{
+        display: inline;
+
+        padding: 30px 7.5px;
+
+        border-bottom: none;
+    }
+    .fa-food{
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+    #first-option{
+        border-top: none;
+        border-top-right-radius: 0;
+        border-top-left-radius: 15px;
+    }
+    #last-option{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 15px;
+    }
+    .main-menu-food-div{
+        margin-bottom: -90px;
+        padding-top: 90px;
     }
 }
