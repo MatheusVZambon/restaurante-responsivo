@@ -464,3 +464,13 @@ SUMÁRIO
         flex-direction: column;
     }
 }
+
+
+/* 4 - Contato */
+
+@media only screen and (max-width: 565px){
+    .contact-section-si-area{
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+}

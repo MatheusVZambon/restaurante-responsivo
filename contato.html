@@ -16,22 +16,23 @@
     <header>
         <nav class="header-nav" id="header-nav">
             <ul class="header-nav-menu">
-                <a href="./index.html" class="header-nav-menu-link">
-                    <li class="header-nav-menu-item">Início</li>
+                <a href="./index.html" class="header-nav-menu-link init-display-mobile change-control">
+                    <li class="header-nav-menu-item" id="first-of-nav">Início</li>
                 </a>
-                <a href="./menu.html" class="header-nav-menu-link">
+                <a href="./menu.html" class="header-nav-menu-link init-display-mobile change-control">
                     <li class="header-nav-menu-item">Cardápio</li>
                 </a>
             </ul>
-            <h1 class="header-nav-logo">Spettacolo</h1> 
+            <h1 class="header-nav-logo" id="header-logo">Spettacolo</h1>
             <ul class="header-nav-menu">
-                <a href="./reserva.html" class="header-nav-menu-link">
+                <a href="./reserva.html" class="header-nav-menu-link init-display-mobile change-control">
                     <li class="header-nav-menu-item">Reserva</li>
                 </a>
-                <a href="./contato.html" class="header-nav-menu-link">
+                <a href="./contato.html" class="header-nav-menu-link init-display-mobile change-control">
                     <li class="header-nav-menu-item">Contato</li>
                 </a>
             </ul>
+            <h2 class="header-nav-mobile-menu-trigger"><i class="fa-solid fa-bars" onclick="showMobileMenu();"></i></h2>
         </nav>
     </header>
     <main>
@@ -70,7 +71,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="footer-side">
             <a href="#header-nav"><i class="fa-solid fa-chevron-up"></i></a>
             <p class="footer-side-text">Topo</p>
