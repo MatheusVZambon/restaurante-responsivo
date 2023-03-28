@@ -413,3 +413,54 @@ SUMÁRIO
     }
 
 }
+
+
+/* 3. Reserva */
+
+@media only screen and (max-width: 1085px){
+    .main-booking-form{
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 915px){
+    .main-booking-form{
+        padding: 30px 25px;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .main-booking-form{
+        padding: 30px 10px;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .main-booking{
+        grid-template-columns: 100%;
+    }
+    .main-booking-form{
+        padding: 30px 100px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .main-booking-form{
+        padding: 30px 40px;
+    }
+}
+
+@media only screen and (max-width: 535px){
+    .main-booking-form{
+        padding: 30px 20px;
+    }
+}
+
+@media only screen and (max-width: 495px){
+    .main-booking-form{
+        align-items: center;
+    }
+    .form-container{
+        flex-direction: column;
+    }
+}
