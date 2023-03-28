@@ -331,3 +331,85 @@ SUMÁRIO
         padding-top: 90px;
     }
 }
+
+@media only screen and (max-width: 805px){
+    .main-menu-food-div-container{
+        grid-template-columns: 45% 45%;
+    }
+    .long-title{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 775px){
+    .fa-food{
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .main-menu-aside-nav-list-options, #pp-option{
+        font-size: 14px;
+    }
+    .long-title{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 625px){
+    .main-menu-aside-nav-list-options, #pp-option{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 565px){
+    .main-menu{
+        width: 100%;
+    }
+    .main-menu-aside-nav-list{
+        display: grid;
+        grid-template-columns: repeat(25%);
+        width: 100%;
+        justify-content: space-between;
+        grid-auto-flow: column;
+    }
+    .main-menu-aside-nav-list-options, #pp-option{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+        height: 100%;
+
+        padding-top: 10px;
+    }
+    .long-option{
+        font-size: 14px;
+    }
+    .fa-food{
+        padding: 0px 45px 25px 45px;
+    }
+    .main-menu-food-div{
+        margin-bottom: -160px;
+        padding-top: 160px;
+    }
+    #footer-menu{
+        margin-top: 160px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .fa-food{
+        padding: 0px 22.5px 12.5px 22.5px;
+    }
+    .main-menu-aside-nav-list-options, #pp-option{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .main-menu-aside-nav-list-options, #pp-option{
+        font-size: 12px;
+    }
+    .main-menu-food-div-container{
+        grid-template-columns: 100%;
+    }
+
+}
