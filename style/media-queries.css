@@ -21,6 +21,13 @@ SUMÁRIO
 
 /* 1. Index */
 
+@media only screen and (max-width: 1347px){
+    .header-nav-menu-link{
+        -webkit-margin-start: 15px;
+        -webkit-margin-end: 15px;
+    }
+}
+
 @media only screen and (max-width: 1281px){
     .main-team-content-card-container{
         column-gap: 15px;
@@ -34,6 +41,8 @@ SUMÁRIO
 @media only screen and (max-width: 1244px){
     .header-nav-menu-link{
         margin-inline: 30px;
+        -webkit-margin-start: 11px;
+        -webkit-margin-end: 11px;
     }
 }
 
@@ -56,6 +65,12 @@ SUMÁRIO
     }
     .main-team-content-card-text-desc{
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    #webkit-margin{
+        -webkit-margin-end: 15px;
     }
 }
 
@@ -107,6 +122,9 @@ SUMÁRIO
     .header-nav-menu-link{
         margin-inline: 0;
     }
+    #webkit-li-margin{
+        -webkit-margin-before: -20px;
+    }
     .footer-bottom{
         flex-wrap: wrap;
         row-gap: 10px;
@@ -127,6 +145,9 @@ SUMÁRIO
         text-align: center;
         margin: 15px 0;
     }
+    .main-banner{
+        -webkit-margin-before: 70px;
+    }
     .main-banner-food{
         flex-direction: column;
     }
@@ -136,16 +157,28 @@ SUMÁRIO
     }
     .bfs-left{
         clip-path: polygon(0 calc(100% - 30px), 0 0, 100% 0, 100% 100%);
+        -webkit-padding-before: 70px;
+        -webkit-padding-after: 70px;    
     }
     .bfs-mid{
         margin-top: -20px;
         margin-left: 0;
         clip-path: polygon(0 calc(100% - 30px), 0 0, 100% 30px, 100% 100%);
+        -webkit-padding-before: 70px;
+        -webkit-padding-after: 70px;    
     }
     .bfs-right{
         margin-top: -20px;
         margin-left: 0;
         clip-path: polygon(0 100%, 0 0, 100% 30px, 100% 100%);
+        -webkit-padding-before: 70px;
+        -webkit-padding-after: 70px;    
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .main-banner{
+        -webkit-margin-before: 100px;
     }
 }
 
@@ -167,7 +200,7 @@ SUMÁRIO
     }
     footer{
         grid-template-columns: none;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: auto;
         grid-auto-flow: row;
     }
     #footer-reserva{
@@ -250,6 +283,14 @@ SUMÁRIO
     }
     .main-offer-content-card-image-pic{
         border-radius: 10px 0 0 10px;
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    .main-banner{
+        -webkit-margin-before: 130px;
+        -webkit-margin-after: 130px;
     }
 
 }

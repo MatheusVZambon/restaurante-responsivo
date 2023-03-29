@@ -124,6 +124,10 @@ header{
     display: none;
 }
 
+#webkit-margin{
+    -webkit-margin-end: 30px;
+}
+
 /* 3. Homepage */
 
 /* 3.1 Main - Homepage */
