@@ -205,7 +205,6 @@ SUMÁRIO
     }
     #footer-reserva{
         grid-template-columns: none;
-        grid-template-rows: 0% 100%;
     }
     .footer-side{
         padding: 15px 0;
@@ -337,7 +336,6 @@ SUMÁRIO
 @media only screen and (max-width: 1000px){
     .main-menu{
         grid-template-columns: none;
-        grid-template-rows: 15% 80%;
     }
     
     .long-option, #pp-option{
